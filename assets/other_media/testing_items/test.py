@@ -1,20 +1,13 @@
 # This is a testing file.
-# Im using it to test if it will download properly and so and so on.
+# Im using to it to test if a file download is sucessfull.
 
-# Define a string for "Other Welcome!"
-ow = "Other Welcome!"
+# These def's are for testing importing. 
 
-# Define a string for "Variable"
-var = "Variable"
+def HelloWorld():
+  print("Hello World!")
 
-# Try something useless.
-try:
-  print(var)
-except:
-  print(ow)
+def HelloSpace():
+  print("Hello Space!")
 
-# Define a string for "Hello World!"
-hw = "Hello World!"
-
-# Print "Hello World!"
-print(hw)
+def HelloOther():
+  print("Hello Other!")
