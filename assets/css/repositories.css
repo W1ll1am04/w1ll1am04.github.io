@@ -107,3 +107,7 @@ body {
 header {
   background-color: #cff;
 }
+
+#current {
+	color: white;
+}
