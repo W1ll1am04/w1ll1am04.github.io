@@ -57,14 +57,6 @@ body, main {
 	font-size: 37px;
 	font-weight: bold;
 	margin-left: 13px;
-	background-image: -webkit-linear-gradient(left, white 25%, gray 37.5%, gray, gray 62.5%, white 75%);
-    background-position: right center;
-    background-size: 400% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
-    transition: color 200ms linear;
 }
 
 #down_ {
@@ -148,10 +140,4 @@ body, main {
 
 #current {
 	color: white;
-}
-
-#top_img:hover {
-  background-position: left center;
-  color: white;
-  transition: background-position 800ms ease-out;
 }
