@@ -87,20 +87,20 @@ body, main {
 	font-size: 30px;
 }
 
-#about_h {
+.about_h {
 	margin-top: 10px;
 	margin: 0 auto 0 auto;
 	margin-left: 10px;
 	font-size: 30px;
 }
 
-#tiny_h {
+.tiny_h {
 	margin-top: 10px;
 	margin-left: 9px;
 	font-size: 25px;
 }
 
-#p_desc {
+.p_desc {
 	margin-top: -15px;
 	margin-left: 10px;
 }
@@ -166,7 +166,7 @@ body, main {
 	width: 120px;
 }
 
-#about_p {
+.about_p {
 	color: white;
 	margin-top: -10px;
 	padding-left: 180px;
