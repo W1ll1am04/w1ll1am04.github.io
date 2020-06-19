@@ -15,7 +15,7 @@
   bottom:0;
   height:100vh;
   background: none;
-  background-image: url('/other/keyframes/s1.png'), url('/other/keyframes/s2.png'), url('/other/keyframes/s3.png');
+  background-image: url('s1.png'), url('s2.png'), url('s3.png');
   z-index:100;
   -webkit-animation: snow 10s linear infinite;
   -moz-animation: snow 10s linear infinite;

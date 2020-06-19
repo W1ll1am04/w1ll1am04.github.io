@@ -1,5 +1,6 @@
+<!--w1ll1am04.github.io-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="Homepage of W1ll1am04">
@@ -11,30 +12,45 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<title>W1ll1am04's Homepage</title>
-	<link rel="stylesheet" href="assets\css\style.css">
-	<link rel="stylesheet" href="assets\keyframes\keyframes.css">
-	<noscript></noscript>
-	<script src="scripts/sch.js"></script>
+	<link rel="stylesheet" href="assets\css\style.css"/>
+	<link rel="stylesheet" href="assets\keyframes\keyframes.css"/>
+	<script src="scripts\sch.js"></script>
+	<script src="scripts\quantity.js"></script>
 </head>
 	<body>
-
+	<noscript>
+		<div id="noscript_mm">
+			<p id="noscript_info">if scripts are disabled, some parts of this page may not work. for example it won't snow on this page in december, and github api requests will not function. thats all :)</p>
+		</div>
+	</noscript>
 	<div style="display: block;" id="side1" class="sidebar">
 	  <a href="https://w1ll1am04.github.io" id="top_img">WH</a>
 	  <a> </a>
-	  <a href="https://w1ll1am04.github.io/projects"> Projects</a>
-	  <a href="https://w1ll1am04.github.io/repositories"> Repositories</a>
+	  <a href="https://w1ll1am04.github.io"> Homepage</a>
+	  <a href="https://w1ll1am04.github.io/projects"> Web-projects <span id="web_quantity"></span></a>
+	  <a href="https://w1ll1am04.github.io/repositories"> Repositories <span id="quantity"></span></a>
 	  <a href="https://w1ll1am04.github.io/resources"> Resources</a>
-	  <a href="https://w1ll1am04.github.io/maintence.html"> Contact</a>
+	  <a href="https://w1ll1am04.github.io/about"> About</a>
 	  <a href="https://w1ll1am04.github.io/Other"> Other</a>
-	  <a id="down_" href="https://www.github.com/W1ll1am04">Github</a>
+	  <p id="section_text">Offsite</p>
+	  <hr class="hr0">
+	  <a style="position: fixed; top: 92%;" href="https://www.github.com/W1ll1am04"> Github</a>
+	  <a style="position: fixed; top: 95%;" href="https://www.github.com/W1ll1am04"> Repl.it</a>
 	</div>
 
 	<div class="cont">
 		<div class="main">
-			  <h1 id="main_h">Welcome.</h1>
-			  <p id="p_desc">Homepage of W1ll1am04's projects, scripts, downloads, etc.</p>
+			  <div class="content_panel">
+				<h1 id="main_h">Welcome to w1ll1am04's homepage.</h1>
+				<p id="p_desc">This is W1ll1am04's personal homepage, hosted by <a id="link" href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">github</a>.</p>
+				<p id="p_desc">On this page i put all-kinds of stuff like live-examples for my <a id="link" href="https://w1ll1am04.github.io/projects/">web-projects</a>, This page also has a <a id="link" href="https://w1ll1am04.github.io/repositories/">repositories page.</a> to display my current github repositories.</p>
+				<p id="p_desc">Eventually i will add a wiki too this page, whenever thats needed.</p>
+				<p style="visibility: hidden;" id="p_desc"> -</p>
+				<p id="p_desc">This site supports some kind of args, if you add '?no_api' to the url, this site will not use the github API.</p>
+				<p id="p_desc"><a id="link" href="https://w1ll1am04.github.io?no_api">format it like this.</a></p>
+			  </div>
 		</div>
-		<div id="snow_obj" style="display:none;" class="snow"></div>
+		<div style="display: none;" id="snow_obj" class="snow"/>
 	</div>
 	</body>
-</html> 
+</html>

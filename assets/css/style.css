@@ -1,4 +1,5 @@
 /*w1ll1am04.github.io*/
+/*This is the global w1ll1am04.github.io webpage stylesheet, Some of these are only used on certaint pages and other pages not.*/
 
 html, body, main {
     margin: 0;
@@ -7,8 +8,13 @@ html, body, main {
 
 body, main {
 	font-family: Avant Garde, Avantgarde, sans-serif;
-	background-color: #292929;
-    position: fixed;
+	background-color: #03315f;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/back.jpg); /*Image by https://pixabay.com/users/kienvirak-11003985/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4946313 kien virak from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4946313 Pixabay*/
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: fixed;
 	width: 100%;
     height: 100%;
     left: 0;
@@ -16,30 +22,31 @@ body, main {
     z-index: 10;
 }
 
-
 .sidebar {
-  font-family: Verdana, Arial, Helvetica;
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/back.jpg); /*Image by https://pixabay.com/users/kienvirak-11003985/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4946313 kien virak from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4946313 Pixabay*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   height: 100%;
   width: 144px;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #1f1f1f;
+  background-color: #03315f;
   overflow-x: hidden;
   padding-top: 16px;
 }
 
 .sidebar a {
   padding: 2px 5px 10px 12px;
-  text-decoration: none;
-  font-size: 19px;
-  color: gray;
+  color: white;
   display: block;
   top: 100%;
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: #99d1ff;
 }
 
 @media only screen and (max-width: 600px) {
@@ -53,19 +60,16 @@ body, main {
 }
 #top_img {
 	color: white;
+	text-decoration: none;
 	padding: 0px 2px;
 	font-size: 37px;
 	font-weight: bold;
 	margin-left: 13px;
-}
-
-#down_ {
-	position: fixed;
-	top: 95%;
+	font-family: Verdana, Arial, Helvetica;
 }
 
 .main {
-  margin-left: 160px;
+  margin-left: 140px;
   padding: 0px 10px;
   color: white;
 }
@@ -78,25 +82,32 @@ body, main {
 }
 
 #main_h {
-	margin-left: -10px;
 	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 30px;
+}
+
+#about_h {
+	margin-top: 10px;
+	margin: 0 auto 0 auto;
+	margin-left: 10px;
 	font-size: 30px;
 }
 
 #tiny_h {
-	margin-left: -10px;
 	margin-top: 10px;
+	margin-left: 9px;
 	font-size: 25px;
 }
 
 #p_desc {
 	margin-top: -15px;
-	margin-left: -10px;
+	margin-left: 10px;
 }
 
 #tp_desc {
 	margin-top: -15px;
-	margin-left: -9px;
+	margin-left: 9px;
 }
 
 .frame1
@@ -105,15 +116,15 @@ body, main {
   height: 860px;
 }
 
-@media screen and (max-width: 995px) , screen and (max-height: 700px) {
-  .frame1 {
-    width: 320px;
-    height: 700px;
-	margin-left: -30px;
-    }
-	#lnk {
-		margin-left: -30px;
-	}
+.content_panel
+{
+  width: 97%;
+  height: 950px;
+  border: 2px solid black;
+  margin: 0 auto 0 auto;
+  margin-top: 10px;
+  line-height: 1.6;
+  background-color: rgba(0,0,0,0.5);
 }
 
 #project-display-box {
@@ -121,7 +132,8 @@ body, main {
 	padding: 10px 10px 10px 10px;
     float: left;
 	width: 50%;
-	margin-left: -10px;
+	margin-left: 10px;
+	background-color: rgba(0,0,0,0.5);
 
 }
 #project_name {
@@ -138,6 +150,75 @@ body, main {
 	margin: 0px 0px;
 }
 
-#current {
+#section_text {
+	position: fixed;
+	top: 89%;
+	padding-left: 40px;
 	color: white;
+	font-weight: bold;
+	margin: 0 0 0 0;
+}
+
+.hr0 {
+	position: fixed;
+	top: 90.2%;
+	left: 10px;
+	width: 120px;
+}
+
+#about_p {
+	color: white;
+	margin-top: -10px;
+	padding-left: 180px;
+}
+
+#about_th {
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: -35px;
+	padding-left: 180px;
+}
+
+#about_sh {
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: -10px;
+	padding-left: 180px;
+}
+
+#noscript_mm {
+	display: block;
+	float: right;
+	overflow: auto;
+	position: relative;
+	height: 60px;
+	width: 28%;
+	margin-right: 15px;
+	background: rgba(0,0,0,0.6);
+	color: white;
+	border: 2px solid black;
+}
+
+#noscript_info {
+	margin-top: 5px;
+}
+
+#link {
+	color: white;
+}
+
+#link:hover {
+	color: #99d1ff;
+}
+
+::-moz-selection { /* firefox */
+  color: #99d1ff;
+  background: rgba(0,0,0,0.8);
+}
+
+::selection {
+  color: #99d1ff;
+  background: rgba(0,0,0,0.8);
 }
