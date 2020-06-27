@@ -125,6 +125,7 @@ body, main {
   margin-top: 10px;
   line-height: 1.6;
   background-color: rgba(0,0,0,0.5);
+  overflow: scroll;
 }
 
 #project-display-box {
