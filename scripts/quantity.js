@@ -5,6 +5,7 @@
 const debug = false;
 window.onload=function() {
 	try {
+		console.log("INFO: Fetching github API...");
 		webcount();
 		if (check_arg() == false) {
 			console.log("INFO: Found load_arg: no_api.");
@@ -20,11 +21,12 @@ window.onload=function() {
 				if (debug) {console.log(parsed["public_repos"]);}
 				document.getElementById("quantity").innerHTML = "(" + parsed["public_repos"] + ")";
 			}
+			console.log("INFO: sucessfully fetched github API.");
 		}
 
 	}
 	catch (except) {
-		console.warn("window.onload=function() failed and suffered an exception: " + except);
+		console.warn("main() failed and suffered an exception: " + except);
 	}
 }
 
@@ -75,12 +77,17 @@ function webcount() {
 			return true;
 		}
 		else {
-			document.getElementById("projects-message").innerHTML = " These projects are static, they are manually added. API is not used to fetch them.";
-			return false;
+			if (document.getElementById("projects-message")) {
+				document.getElementById("projects-message").innerHTML = " These projects are static, they are manually added. API is not used to fetch them.";
+				return true;
+			}
+			else {
+				return false;
+			}
 		}
 	}
 	catch (except) {
-		console.warn("webcount() failed and suffered an exception: " + except);
+		console.warn("webcount() failed and suffered an exception: " + except + ", on line: " + except.lineNumber);
 		return false;
 	}
 }

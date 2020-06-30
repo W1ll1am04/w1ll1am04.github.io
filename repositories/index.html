@@ -1,7 +1,14 @@
 <!--w1ll1am04.github.io--> 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Homepage of W1ll1am04">
+	<meta property="og:site_name" content="w1ll1am04.github.io">
+	<meta property="og:url" content="http://w1ll1am04.github.io">
+	<meta property="og:image" content="https://w1ll1am04.github.io/assets/other_media/favicon.png">
+	<meta property="article:author" content="http://w1ll1am04.github.io">
+	<meta property="og:description" content="The Homepage of W1ll1am04's Repositories, Projects, and other things." />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<title>W1ll1am04's Homepage</title>
@@ -10,40 +17,6 @@
 	<link rel="stylesheet" href="../assets/css/github-widget.css">
 	<script src="../scripts/sch.js"></script>
 	<script src="../scripts/quantity.js"></script>
-</head>
-<body>
-	<noscript>
-		<div id="noscript_mm">
-			<p id="noscript_info">if scripts are disabled, some parts of this page may not work. for example it won't snow on this page in december, and github api requests will not function. thats all :)</p>
-		</div>
-	</noscript>
-	<div style="display: block;" id="side1" class="sidebar">
-	  <a href="https://w1ll1am04.github.io" id="top_img">WH</a>
-	  <a> </a>
-	  <a href="https://w1ll1am04.github.io"> Homepage</a>
-	  <a href="https://w1ll1am04.github.io/projects"> Web-projects <span id="web_quantity"></span></a>
-	  <a href="https://w1ll1am04.github.io/repositories"> Repositories <span id="quantity"></span></a>
-	  <a href="https://w1ll1am04.github.io/resources"> Resources</a>
-	  <a href="https://w1ll1am04.github.io/about"> About</a>
-	  <a href="https://w1ll1am04.github.io/Other"> Other</a>
-	  <p id="section_text">Offsite</p>
-	  <hr class="hr0">
-	  <a style="position: fixed; top: 92%;" href="https://www.github.com/W1ll1am04"> Github</a>
-	  <a style="position: fixed; top: 95%;" href="https://www.github.com/W1ll1am04"> Repl.it</a>
-	</div>
-
-	<div class="cont">
-		<div class="main">
-			  <div class="content_panel">
-			  	  <h1 class="tiny_h"> Repositories</h1>
-			  	  <p class="p_desc">i used <a class="link" href="https://github.com/jawj/github-widget">github-widget</a> to make this part of the page. <span style="font-size: 12px;">(if this page is empty then you might have exceeded <a class="link" href="https://developer.github.com/v3/rate_limit/">github api qouta</a>.)</span></p>
-			  	  <span style="background: rgba(0,0,0,0.6); display: none; color: white; font-size: 50; text-align: center;" id="disabled_api">API requests are disabled via adressbar.</span>
-				  <div class="github-widget" data-user="w1ll1am04" data-options='{"forks":true}'></div>
-			  	  <script src="../scripts/github-widget/github-widget.min.js"></script>
-			  </div>
-		</div>
-		<div id="snow_obj" style="display:none;" class="snow"></div>
-	</div>
 	<style>
 		.github-widget {
 			margin: 10px 10px 10px 10px;
@@ -56,5 +29,43 @@
 		  min-height: 100%;
 		}
 	</style>
-</body>
+</head>
+	<body>
+		<noscript>
+			<div class="static-tsm">
+				w1ll1am04.github.io works best with scripts enabled.
+			</div>
+		</noscript>
+		<script src="../scripts/tsm.js"></script>
+		<div style="display: block;" id="side1" class="sidebar">
+		  <a href="https://w1ll1am04.github.io" id="top_img">WH</a>
+		  <a> </a>
+		  <a href="https://w1ll1am04.github.io"> Homepage</a>
+		  <a href="https://w1ll1am04.github.io/projects"> Web-projects <span id="web_quantity"></span></a>
+		  <a href="https://w1ll1am04.github.io/repositories"> Repositories <span id="quantity"></span></a>
+		  <a href="https://w1ll1am04.github.io/resources"> Resources</a>
+		  <a href="https://w1ll1am04.github.io/about"> About</a>
+		  <a href="https://w1ll1am04.github.io/Other"> Other</a>
+		  <p id="section_text">Offsite</p>
+		  <hr class="hr0">
+		  <a style="position: fixed; top: 92%;" href="https://www.github.com/W1ll1am04"> Github</a>
+		  <a style="position: fixed; top: 95%;" href="https://www.github.com/W1ll1am04"> Repl.it</a>
+		</div>
+		<div id="tsm">
+				 Rotate your device for better scaling. <span onclick="disable_rtw()"><strong>X</strong></span>
+		</div>
+		<div class="cont">
+			<div class="main">
+				  <div class="content_panel">
+					  <h1 class="tiny_h"> Repositories</h1>
+					  <p class="p_desc">i used <a class="link" href="https://github.com/jawj/github-widget">github-widget</a> to make this part of the page. <span style="font-size: 12px;">(if this page is empty then you might have exceeded <a class="link" href="https://developer.github.com/v3/rate_limit/">github api qouta</a>.)</span></p>
+					  <span style="background: rgba(0,0,0,0.6); display: none; color: white; text-align: center;" id="disabled_api">API requests are disabled via adressbar.</span>
+					  <div class="github-widget" data-user="w1ll1am04" data-options='{"forks":true}'></div>
+					  <script src="../scripts/github-widget/github-widget.min.js"></script>
+				  </div>
+			</div>
+			<div id="snow_obj" style="display:none;" class="snow"></div>
+		</div>
+		<script src="../scripts/tsm.js"></script>
+	</body>
 </html>
