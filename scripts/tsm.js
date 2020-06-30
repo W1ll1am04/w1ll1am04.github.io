@@ -10,9 +10,6 @@ function tsm() { // test for small screen
 		if (document.getElementById("about_page")) { /* id 'about_page' is only a thing on the about page. */
 			document.getElementById("about_page").innerHTML = "About";
 		}
-		else {
-			console.log("no :(");
-		}
 	}
 	if (debug == true) {console.log(screen.width +"x"+ screen.height);}
 	window.addEventListener('orientationchange', check_orientation);	
