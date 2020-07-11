@@ -19,7 +19,12 @@ window.onload=function() {
 			function reqListener () {
 				var parsed = JSON.parse(this.responseText);
 				if (debug) {console.log(parsed["public_repos"]);}
-				document.getElementById("quantity").innerHTML = "(" + parsed["public_repos"] + ")";
+				if (document.getElementById("quantity")) {
+					document.getElementById("quantity").innerHTML = "(" + parsed["public_repos"] + ")";	
+				}
+				if (document.getElementById("gist_quantity")) {
+					document.getElementById("gist_quantity").innerHTML = "(" + parsed["public_gists"] + ")";
+				}
 			}
 			console.log("INFO: sucessfully fetched github API.");
 		}
